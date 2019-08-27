@@ -1,0 +1,65 @@
+body{
+background: linear-gradient(35deg,  #CCFFFF , #7833fa);
+background-size: 400% 400%;
+	animation: Gradient 10s ease infinite;}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+#SearchContainer{
+    border-width:2px;
+    border-style: solid;
+    border-color: azure;
+   margin-left: 100px;
+    margin-right: 100px;
+    padding :5px;
+   background-blend-mode:soft-light;
+    
+}
+#weatherContainer{
+    border-width:1px;
+    border-style: solid;
+    border-color: azure;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding :5px;
+    
+    
+}
+input[type='text']{
+  padding:10px;
+  margin-top: 10px;
+  border:0px;
+  color:navy;
+  background: transparent;
+  border-color: white;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+input[type='Submit']{
+  padding:10px 20px;
+  font-family:italic;
+  background-color: lightblue;
+  color:black;
+
+}
+input[type='Submit']:hover{
+color:white;
+background-color: #ea69ea;
+
+}
+
+
+
+
