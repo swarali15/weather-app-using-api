@@ -14,9 +14,7 @@ function findMatches(wordToMatch, cities) {
     return place.city.match(regex) || place.state.match(regex)
   });
 }
-function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
+
 function displayMatches() {
   const matchArray = findMatches(this.value, cities);
   const html = matchArray.map(place => {
@@ -32,6 +30,7 @@ function displayMatches() {
   }).join('');
   suggestions.innerHTML = html;
 }
+
 const searchInput = document.querySelector('.searchControl');
 const suggestions = document.querySelector('.suggestions');
 searchInput.addEventListener('change', displayMatches);
@@ -90,6 +89,8 @@ document.getElementById('searchbtn').addEventListener('click',()=>{
         searchWeather(searchTerm);
 })
 
+
+ 
 
  
  
